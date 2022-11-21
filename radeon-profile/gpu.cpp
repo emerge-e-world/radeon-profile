@@ -102,7 +102,6 @@ void gpu::changeGpu(int index) {
     delete driverHandler;
 
     driverHandler = new dXorg(gpuList.at(index), initConfig);
-    driverHandler->configure();
     defineAvailableDataContainer();
 }
 
